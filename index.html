@@ -117,21 +117,6 @@
         padding-top: 10px;
         text-align: center;
       }
-      .scroll-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: #ffffff;
-        color: #000000;
-        border: none;
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        font-size: 24px;
-        cursor: pointer;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        display: none;
-      }
     </style>
   </head>
   <body>
@@ -148,86 +133,11 @@
         </p>
       </div>
 
-      <div class="projects">
-        <h2>Proyectos Destacados</h2>
-        <ul>
-          <li>
-            <strong>alguno que otro.1:</strong> Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quasi, delectus. <br /><a href="#"
-              >Enlace al proyecto</a
-            >
-          </li>
-          <li>
-            <strong>no los puedo publicar. 2:</strong> Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Sed, dicta. <br /><a href="#"
-              >Enlace al proyecto</a
-            >
-          </li>
-          <li>
-            <strong>la seguridad y privacidad, ya sabes. 3:</strong> Lorem ipsum, dolor sit amet
-            consectetur adipisicing elit. Aliquid, dolorum! <br /><a href="#"
-              >Enlace al proyecto</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="skills">
-        <h2>Habilidades</h2>
-        <ul>
-          <li>
-            <strong>Frontend:</strong> HTML, CSS, JavaScript, React, Angular
-          </li>
-          <li><strong>Backend:</strong> Node.js, Python, Django, Express</li>
-          <li><strong>Bases de Datos:</strong> MongoDB, PostgreSQL, MySQL</li>
-          <li><strong>Herramientas:</strong> Git, Docker, Jenkins, Webpack</li>
-        </ul>
-      </div>
-
-      <div class="contact">
-        <h2>Contacto</h2>
-        <form action="enviar-email.php" method="post">
-          <input type="text" name="name" placeholder="Tu Nombre" required />
-          <input
-            type="email"
-            name="email"
-            placeholder="Tu Correo Electrónico"
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Tu Mensaje"
-            rows="5"
-            required
-          ></textarea>
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
-
       <div class="quote">
         <p>
           2024 &copy; fullsdm
         </p>
       </div>
     </div>
-
-    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
-
-    <script>
-      // Show/hide the scroll-to-top button based on scroll position
-      window.addEventListener("scroll", function () {
-        const scrollTopButton = document.querySelector(".scroll-to-top");
-        if (window.scrollY > 300) {
-          scrollTopButton.style.display = "block";
-        } else {
-          scrollTopButton.style.display = "none";
-        }
-      });
-
-      // Scroll to top function
-      function scrollToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    </script>
   </body>
 </html>
