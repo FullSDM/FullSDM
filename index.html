@@ -1,143 +1,179 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" type="image/jpg" href="https://fullsdm.com/fullsdm.jpg" />
-    <meta name="robots" content="index, follow" />
-    <title>FullSDM</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Desarrollador Full Stack - Jorge Jiménez">
+    <title>FullSDM - Jorge Jiménez</title>
     <style>
-      body {
-        background-color: #1e1e1e;
-        color: #e0e0e0;
-        font-family: "Rajdhani", sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-      }
-      .profile {
-        text-align: center;
-        margin-bottom: 40px;
-        position: relative;
-      }
-      .profile img {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        transition: transform 0.3s ease;
-      }
-      .profile img:hover {
-        transform: scale(1.1);
-      }
-      h1,
-      h2 {
-        margin: 10px 0;
-        color: #ffffff;
-      }
-      h2 {
-        color: #ffffff;
-      }
-      .description {
-        text-align: center;
-        font-size: 1.1em;
-        line-height: 1.6;
-      }
-      .projects,
-      .skills,
-      .contact {
-        margin-bottom: 40px;
-      }
-      .projects ul,
-      .skills ul {
-        list-style-type: none;
-        padding: 0;
-      }
-      .projects li,
-      .skills li {
-        margin: 15px 0;
-        padding: 15px;
-        border-radius: 8px;
-        background-color: #333;
-        transition: background-color 0.3s ease;
-      }
-      .projects li:hover,
-      .skills li:hover {
-        background-color: #444;
-      }
-      .projects a,
-      .skills a {
-        color: #ffffff;
-        text-decoration: none;
-      }
-      .projects a:hover,
-      .skills a:hover {
-        text-decoration: underline;
-      }
-      .contact p,
-      .contact form {
-        margin: 10px 0;
-        text-align: center;
-      }
-      .contact input,
-      .contact textarea {
-        width: calc(100% - 40px);
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ffffff;
-        border-radius: 5px;
-        background-color: #333;
-        color: #e0e0e0;
-      }
-      .contact button {
-        background-color: #ffffff;
-        color: #000000;
-        border: none;
-        padding: 10px 20px;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 16px;
-        transition: background-color 0.3s ease;
-      }
-      .contact button:hover {
-        background-color: #ffffff;
-      }
-      .quote {
-        font-style: italic;
-        margin-top: 20px;
-        border-top: 1px solid #333;
-        padding-top: 10px;
-        text-align: center;
-      }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 2rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 1rem;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #hero {
+            background: url('hero.jpg') no-repeat center center/cover;
+            color: #fff;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .cta {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin-top: 1rem;
+            background: #ff5733;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 2rem;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .service, .portfolio-item {
+            margin: 1rem 0;
+        }
+
+        .portfolio-item img {
+            max-width: 100%;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-top: 1rem;
+        }
+
+        form input, form textarea {
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        form button {
+            padding: 1rem;
+            margin-top: 1rem;
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
     </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="profile">
-        <img src="https://fullsdm.com/fullsdm.jpg" alt="Foto de Perfil" />
-        <h1>Jorge Jiménez</h1>
-        <h2>@fullsdm</h2>
-      </div>
-
-      <div class="description">
-        <p> 
-          "Aprende como si fueras a vivir para siempre, vive como si fueras a morir mañana."
-        </p>
-      </div>
-
-      <div class="quote">
-        <p>
-          2024 &copy; fullsdm
-        </p>
-      </div>
-    </div>
-  </body>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="#">FullSDM</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Desarrollador Full Stack</h2>
+            <p>Transformando ideas en realidad digital</p>
+            <a href="#contact" class="cta">Contáctame</a>
+        </section>
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>Soy Jorge Jiménez, un desarrollador Full Stack con experiencia en diversas tecnologías...</p>
+        </section>
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="service">
+                <h3>Desarrollo Web</h3>
+                <p>Construcción de sitios web responsivos y optimizados...</p>
+            </div>
+            <div class="service">
+                <h3>Aplicaciones Móviles</h3>
+                <p>Desarrollo de aplicaciones móviles para Android y iOS...</p>
+            </div>
+        </section>
+        <section id="portfolio">
+            <h2>Portafolio</h2>
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Proyecto 1">
+                <h3>Proyecto 1</h3>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Proyecto 2">
+                <h3>Proyecto 2</h3>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FullSDM. Todos los derechos reservados.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            console.log("Bienvenido a FullSDM!");
+        });
+    </script>
+</body>
 </html>
