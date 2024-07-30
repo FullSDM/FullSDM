@@ -1,8 +1,8 @@
-# Fullsdm - Jorge Jiménez
+# FullSDM - Jorge Jiménez
 
-¡Bienvenido a Fullsdm! 🌐
+¡Bienvenido a FullSDM! 🌐
 
-Soy Jorge Jiménez, un desarrollador Full Stack apasionado y dedicado. A través de Fullsdm, ofrezco mis servicios profesionales para ayudarte a construir soluciones tecnológicas de alta calidad, robustas y escalables.
+Soy Jorge Jiménez, un desarrollador Full Stack apasionado y dedicado. A través de FullSDM, ofrezco mis servicios profesionales para ayudarte a construir soluciones tecnológicas de alta calidad, robustas y escalables.
 
 ## Tabla de Contenidos
 
@@ -52,4 +52,4 @@ Para consultas, propuestas de proyectos o cualquier otra pregunta, no dudes en c
 
 ---
 
-¡Gracias por visitar Fullsdm y espero tener la oportunidad de colaborar contigo en tus proyectos tecnológicos!
+¡Gracias por visitar FullSDM y espero tener la oportunidad de colaborar contigo en tus proyectos tecnológicos!
